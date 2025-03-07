@@ -109,7 +109,8 @@ body{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all0.3s ease;
     
-}.main .header .info a:hover{
+} 
+.main .header .info a:hover{
     box-shadow: none;
 
 }
@@ -121,7 +122,7 @@ body{
     height: 470px;
     border-radius: 20px;
 }
-.main  .call .host .tag{
+.main  .call .host .tag, .main .call .clients .item .tag {
     position: absolute;
     bottom: 18px;
     left: 18px;
@@ -134,8 +135,12 @@ body{
 .main .call .clients{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
-    
+    margin-top: 20px;
+
+}
+.main .call .clients .item{
+    width: 20%;
+    position: relative;
 }
 
 .main .call .clients img{
@@ -143,4 +148,26 @@ body{
     max-width: 200px;
     max-height: 200px;
     border-radius: 10px;
+}
+.main .call .clients .item .tag{
+    font-size: 11px;
+    bottom: 12px;
+    left: 33%;
+}
+.main .controls{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+.main .controls i{
+    font-size: 24px;
+    color: #67707e;
+    background: #fff;
+    border-radius: 50%;
+    padding: 12px 13px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
 }
